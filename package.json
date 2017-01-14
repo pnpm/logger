@@ -1,0 +1,48 @@
+{
+  "name": "pnpm-logger",
+  "version": "0.0.0",
+  "description": "Logger for pnpm",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "tslint -c tslint.json --project .",
+    "tsc": "rimraf lib && tsc",
+    "prepublish": "npm run tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnpm/pnpm-logger.git"
+  },
+  "keywords": [
+    "pnpm",
+    "logger"
+  ],
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnpm/pnpm-logger/issues"
+  },
+  "homepage": "https://github.com/pnpm/pnpm-logger#readme",
+  "dependencies": {
+    "bole": "^3.0.2"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.5",
+    "ghooks": "^2.0.0",
+    "rimraf": "^2.5.4",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5",
+    "validate-commit-msg": "^2.8.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "node ./node_modules/validate-commit-msg/index.js"
+    }
+  }
+}
