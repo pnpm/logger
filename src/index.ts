@@ -15,7 +15,7 @@ export type ProgressMessage = {
 
 export type InstallCheckMessage = {
   code: string,
-  pkgid: string,
+  pkgId: string,
 }
 
 export type Log = {
