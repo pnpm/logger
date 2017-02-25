@@ -20,7 +20,6 @@ export type ProgressMessage = {
     done: number,
     total: number,
   },
-  keypath?: string[],
 }
 
 export type InstallCheckMessage = {
@@ -43,4 +42,5 @@ export type LoggedPkg = {
   rawSpec: string,
   name: string,
   version?: string,
+  dependentId?: string,
 }
