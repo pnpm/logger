@@ -33,7 +33,7 @@
     "commitizen": "^2.9.5",
     "ghooks": "^2.0.0",
     "rimraf": "^2.5.4",
-    "tslint": "^4.3.1",
+    "tslint": "^5.0.0",
     "typescript": "^2.1.5",
     "validate-commit-msg": "^2.8.2"
   },
