@@ -1,0 +1,559 @@
+dependencies:
+  bole@^3.0.2: 3.0.2
+  commitizen@^2.9.5: 2.9.6
+  ghooks@^2.0.0: 2.0.0
+  rimraf@^2.5.4: 2.6.1
+  tslint@^5.0.0: 5.0.0
+  typescript@^2.1.5: 2.2.2
+  validate-commit-msg@^2.8.2: 2.12.1
+packages:
+  /ansi-escapes/1.4.0: d3a8a83b319aa67793662b13e761c7911422306e
+  /ansi-regex/2.1.1: c3b33ab5ee360d86e0e628f0468ae7ef27d654df
+  /ansi-styles/2.2.1: b432dd3358b634cf75e1e4664368240533c1ddbe
+  /arr-diff/2.0.0:
+    dependencies:
+      arr-flatten: 1.0.1
+    resolution: 8f3b827f955a8bd669697e4a4256ac3ceae356cf
+  /arr-flatten/1.0.1: e5ffe54d45e19f32f216e91eb99c8ce892bb604b
+  /array-unique/0.2.1: a1d97ccafcbc2625cc70fadceb36a50c58b01a53
+  /babel-code-frame/6.22.0:
+    dependencies:
+      chalk: 1.1.3
+      esutils: 2.0.2
+      js-tokens: 3.0.1
+    resolution: 027620bee567a88c32561574e7fd0801d33118e4
+  /balanced-match/0.4.2: cb3f3e3c732dc0f01ee70b403f302e61d7709838
+  /bole/3.0.2:
+    dependencies:
+      fast-safe-stringify: 1.1.13
+      individual: 3.0.0
+    resolution: bc8a483ca94049da9b837c1ad11cdfebee6e0514
+  /brace-expansion/1.1.6:
+    dependencies:
+      balanced-match: 0.4.2
+      concat-map: 0.0.1
+    resolution: 7197d7eaa9b87e648390ea61fc66c84427420df9
+  /braces/1.8.5:
+    dependencies:
+      expand-range: 1.8.2
+      preserve: 0.2.0
+      repeat-element: 1.1.2
+    resolution: ba77962e12dff969d6b76711e914b737857bf6a7
+  /buffer-shims/1.0.0: 9978ce317388c649ad8793028c3477ef044a8b51
+  /cachedir/1.1.1:
+    dependencies:
+      os-homedir: 1.0.2
+    resolution: e1363075ea206a12767d92bb711c8a2f76a10f62
+  /chalk/1.1.3:
+    dependencies:
+      ansi-styles: 2.2.1
+      escape-string-regexp: 1.0.5
+      has-ansi: 2.0.0
+      strip-ansi: 3.0.1
+      supports-color: 2.0.0
+    resolution: a8115c55e4a702fe4d150abd3872822a7e09fc98
+  /cli-cursor/1.0.2:
+    dependencies:
+      restore-cursor: 1.0.1
+    resolution: 64da3f7d56a54412e59794bd62dc35295e8f2987
+  /cli-width/2.1.0: b234ca209b29ef66fc518d9b98d5847b00edf00a
+  /code-point-at/1.1.0: 0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77
+  /colors/0.6.2: 2423fe6678ac0c5dae8852e5d0e5be08c997abcc
+  /colors/1.1.2: 168a4701756b6a7f51a12ce0c97bfa28c084ed63
+  /commander/2.1.0: d121bbae860d9992a3d517ba96f56588e47c6781
+  /commander/2.9.0:
+    dependencies:
+      graceful-readlink: 1.0.1
+    resolution: 9c99094176e12240cb22d6c5146098400fe0f7d4
+  /commitizen/2.9.6:
+    dependencies:
+      cachedir: 1.1.1
+      chalk: 1.1.3
+      cz-conventional-changelog: 1.2.0
+      dedent: 0.6.0
+      detect-indent: 4.0.0
+      find-node-modules: 1.0.4
+      find-root: 1.0.0
+      fs-extra: 1.0.0
+      glob: 7.1.1
+      inquirer: 1.2.3
+      lodash: 4.17.2
+      minimist: 1.2.0
+      path-exists: 2.1.0
+      shelljs: 0.7.6
+      strip-json-comments: 2.0.1
+    resolution: c0d00535ef264da7f63737edfda4228983fa2291
+  /concat-map/0.0.1: d8a96bd77fd68df7793a73036a3ba0d5405d477b
+  /concat-stream/1.6.0:
+    dependencies:
+      inherits: 2.0.3
+      readable-stream: 2.2.6
+      typedarray: 0.0.6
+    resolution: 0aac662fd52be78964d5532f694784e70110acf7
+  /conventional-commit-types/2.1.0: 45d860386c9a2e6537ee91d8a1b61bd0411b3d04
+  /core-util-is/1.0.2: b5fd54220aa2bc5ab57aab7140c940754503c1a7
+  /cross-spawn-async/2.2.5:
+    dependencies:
+      lru-cache: 4.0.2
+      which: 1.2.14
+    resolution: 845ff0c0834a3ded9d160daca6d390906bb288cc
+  /cz-conventional-changelog/1.2.0:
+    dependencies:
+      conventional-commit-types: 2.1.0
+      lodash.map: 4.6.0
+      longest: 1.0.1
+      pad-right: 0.2.2
+      right-pad: 1.0.1
+      word-wrap: 1.2.1
+    resolution: 2bca04964c8919b23f3fd6a89ef5e6008b31b3f8
+  /dedent/0.6.0: 0e6da8f0ce52838ef5cec5c8f9396b0c1b64a3cb
+  /detect-file/0.1.0:
+    dependencies:
+      fs-exists-sync: 0.1.0
+    resolution: 4935dedfd9488648e006b0129566e9386711ea63
+  /detect-indent/4.0.0:
+    dependencies:
+      repeating: 2.0.1
+    resolution: f76d064352cdf43a1cb6ce619c4ee3a9475de208
+  /diff/3.2.0: c9ce393a4b7cbd0b058a725c93df299027868ff9
+  /escape-string-regexp/1.0.5: 1b61c0562190a8dff6ae3bb2cf0200ca130b86d4
+  /esutils/2.0.2: 0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b
+  /execa/0.4.0:
+    dependencies:
+      cross-spawn-async: 2.2.5
+      is-stream: 1.1.0
+      npm-run-path: 1.0.0
+      object-assign: 4.1.1
+      path-key: 1.0.0
+      strip-eof: 1.0.0
+    resolution: 4eb6467a36a095fabb2970ff9d5e3fb7bce6ebc3
+  /exit-hook/1.1.1: f05ca233b48c05d54fff07765df8507e95c02ff8
+  /expand-brackets/0.1.5:
+    dependencies:
+      is-posix-bracket: 0.1.1
+    resolution: df07284e342a807cd733ac5af72411e581d1177b
+  /expand-range/1.8.2:
+    dependencies:
+      fill-range: 2.2.3
+    resolution: a299effd335fe2721ebae8e257ec79644fc85337
+  /expand-tilde/1.2.2:
+    dependencies:
+      os-homedir: 1.0.2
+    resolution: 0b81eba897e5a3d31d1c3d102f8f01441e559449
+  /extend/3.0.0: 5a474353b9f3353ddd8176dfd37b91c83a46f1d4
+  /external-editor/1.1.1:
+    dependencies:
+      extend: 3.0.0
+      spawn-sync: 1.0.15
+      tmp: 0.0.29
+    resolution: 12d7b0db850f7ff7e7081baf4005700060c4600b
+  /extglob/0.3.2:
+    dependencies:
+      is-extglob: 1.0.0
+    resolution: 2e18ff3d2f49ab2765cec9023f011daa8d8349a1
+  /fast-safe-stringify/1.1.13: a01e9cd9c9e491715c98a75a42d5f0bbd107ff76
+  /figures/1.7.0:
+    dependencies:
+      escape-string-regexp: 1.0.5
+      object-assign: 4.1.1
+    resolution: cbe1e3affcf1cd44b80cadfed28dc793a9701d2e
+  /filename-regex/2.0.0: 996e3e80479b98b9897f15a8a58b3d084e926775
+  /fill-range/2.2.3:
+    dependencies:
+      is-number: 2.1.0
+      isobject: 2.1.0
+      randomatic: 1.1.6
+      repeat-element: 1.1.2
+      repeat-string: 1.6.1
+    resolution: 50b77dfd7e469bc7492470963699fe7a8485a723
+  /find-node-modules/1.0.4:
+    dependencies:
+      findup-sync: 0.4.2
+      merge: 1.2.0
+    resolution: b6deb3cccb699c87037677bcede2c5f5862b2550
+  /find-parent-dir/0.3.0: 33c44b429ab2b2f0646299c5f9f718f376ff8d54
+  /find-root/1.0.0: 962ff211aab25c6520feeeb8d6287f8f6e95807a
+  /findup-sync/0.3.0:
+    dependencies:
+      glob: 5.0.15
+    resolution: 37930aa5d816b777c03445e1966cc6790a4c0b16
+  /findup-sync/0.4.2:
+    dependencies:
+      detect-file: 0.1.0
+      is-glob: 2.0.1
+      micromatch: 2.3.11
+      resolve-dir: 0.1.1
+    resolution: a8117d0f73124f5a4546839579fe52d7129fb5e5
+  /findup/0.1.5:
+    dependencies:
+      colors: 0.6.2
+      commander: 2.1.0
+    resolution: 8ad929a3393bac627957a7e5de4623b06b0e2ceb
+  /for-in/1.0.2: 81068d295a8142ec0ac726c6e2200c30fb6d5e80
+  /for-own/0.1.5:
+    dependencies:
+      for-in: 1.0.2
+    resolution: 5265c681a4f294dabbf17c9509b6763aa84510ce
+  /fs-exists-sync/0.1.0: 982d6893af918e72d08dec9e8673ff2b5a8d6add
+  /fs-extra/1.0.0:
+    dependencies:
+      graceful-fs: 4.1.11
+      jsonfile: 2.4.0
+      klaw: 1.3.1
+    resolution: cd3ce5f7e7cb6145883fcae3191e9877f8587950
+  /fs.realpath/1.0.0: 1504ad2523158caa40db4a2787cb01411994ea4f
+  /ghooks/2.0.0:
+    dependencies:
+      execa: 0.4.0
+      findup: 0.1.5
+      lodash.clone: 4.3.2
+      manage-path: 2.0.0
+      opt-cli: 1.5.1
+      path-exists: 2.1.0
+      spawn-command: 0.0.2
+    resolution: affd83a36e8b8fbdded9b851457c48ac74c8eab8
+  /glob-base/0.3.0:
+    dependencies:
+      glob-parent: 2.0.0
+      is-glob: 2.0.1
+    resolution: dbb164f6221b1c0b1ccf82aea328b497df0ea3c4
+  /glob-parent/2.0.0:
+    dependencies:
+      is-glob: 2.0.1
+    resolution: 81383d72db054fcccf5336daa902f182f6edbb28
+  /glob/5.0.15:
+    dependencies:
+      inflight: 1.0.6
+      inherits: 2.0.3
+      minimatch: 3.0.3
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    resolution: 1bc936b9e02f4a603fcc222ecf7633d30b8b93b1
+  /glob/7.1.1:
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.3
+      minimatch: 3.0.3
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    resolution: 805211df04faaf1c63a3600306cdf5ade50b2ec8
+  /global-modules/0.2.3:
+    dependencies:
+      global-prefix: 0.1.5
+      is-windows: 0.2.0
+    resolution: ea5a3bed42c6d6ce995a4f8a1269b5dae223828d
+  /global-prefix/0.1.5:
+    dependencies:
+      homedir-polyfill: 1.0.1
+      ini: 1.3.4
+      is-windows: 0.2.0
+      which: 1.2.14
+    resolution: 8d3bc6b8da3ca8112a160d8d496ff0462bfef78f
+  /graceful-fs/4.1.11: 0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658
+  /graceful-readlink/1.0.1: 4cafad76bc62f02fa039b2f94e9a3dd3a391a725
+  /has-ansi/2.0.0:
+    dependencies:
+      ansi-regex: 2.1.1
+    resolution: 34f5049ce1ecdf2b0649af3ef24e45ed35416d91
+  /homedir-polyfill/1.0.1:
+    dependencies:
+      parse-passwd: 1.0.0
+    resolution: 4c2bbc8a758998feebf5ed68580f76d46768b4bc
+  /individual/3.0.0: e7ca4f85f8957b018734f285750dc22ec2f9862d
+  /inflight/1.0.6:
+    dependencies:
+      once: 1.4.0
+      wrappy: 1.0.2
+    resolution: 49bd6331d7d02d0c09bc910a1075ba8165b56df9
+  /inherits/2.0.3: 633c2c83e3da42a502f52466022480f4208261de
+  /ini/1.3.4: 0537cb79daf59b59a1a517dff706c86ec039162e
+  /inquirer/1.2.3:
+    dependencies:
+      ansi-escapes: 1.4.0
+      chalk: 1.1.3
+      cli-cursor: 1.0.2
+      cli-width: 2.1.0
+      external-editor: 1.1.1
+      figures: 1.7.0
+      lodash: 4.17.4
+      mute-stream: 0.0.6
+      pinkie-promise: 2.0.1
+      run-async: 2.3.0
+      rx: 4.1.0
+      string-width: 1.0.2
+      strip-ansi: 3.0.1
+      through: 2.3.8
+    resolution: 4dec6f32f37ef7bb0b2ed3f1d1a5c3f545074918
+  /interpret/1.0.2: f4f623f0bb7122f15f5717c8e254b8161b5c5b2d
+  /is-buffer/1.1.5: 1f3b26ef613b214b88cbca23cc6c01d87961eecc
+  /is-dotfile/1.0.2: 2c132383f39199f8edc268ca01b9b007d205cc4d
+  /is-equal-shallow/0.1.3:
+    dependencies:
+      is-primitive: 2.0.0
+    resolution: 2238098fc221de0bcfa5d9eac4c45d638aa1c534
+  /is-extendable/0.1.1: 62b110e289a471418e3ec36a617d472e301dfc89
+  /is-extglob/1.0.0: ac468177c4943405a092fc8f29760c6ffc6206c0
+  /is-finite/1.0.2:
+    dependencies:
+      number-is-nan: 1.0.1
+    resolution: cc6677695602be550ef11e8b4aa6305342b6d0aa
+  /is-fullwidth-code-point/1.0.0:
+    dependencies:
+      number-is-nan: 1.0.1
+    resolution: ef9e31386f031a7f0d643af82fde50c457ef00cb
+  /is-glob/2.0.1:
+    dependencies:
+      is-extglob: 1.0.0
+    resolution: d096f926a3ded5600f3fdfd91198cb0888c2d863
+  /is-number/2.1.0:
+    dependencies:
+      kind-of: 3.1.0
+    resolution: 01fcbbb393463a548f2f466cce16dece49db908f
+  /is-posix-bracket/0.1.1: 3334dc79774368e92f016e6fbc0a88f5cd6e6bc4
+  /is-primitive/2.0.0: 207bab91638499c07b2adf240a41a87210034575
+  /is-promise/2.1.0: 79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa
+  /is-stream/1.1.0: 12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44
+  /is-windows/0.2.0: de1aa6d63ea29dd248737b69f1ff8b8002d2108c
+  /isarray/1.0.0: bb935d48582cba168c06834957a54a3e07124f11
+  /isexe/2.0.0: e8fbf374dc556ff8947a10dcb0572d633f2cfa10
+  /isobject/2.1.0:
+    dependencies:
+      isarray: 1.0.0
+    resolution: f065561096a3f1da2ef46272f815c840d87e0c89
+  /js-tokens/3.0.1: 08e9f132484a2c45a30907e9dc4d5567b7f114d7
+  /jsonfile/2.4.0:
+    dependencies:
+      graceful-fs: 4.1.11
+    resolution: 3736a2b428b87bbda0cc83b53fa3d633a35c2ae8
+  /kind-of/3.1.0:
+    dependencies:
+      is-buffer: 1.1.5
+    resolution: 475d698a5e49ff5e53d14e3e732429dc8bf4cf47
+  /klaw/1.3.1:
+    dependencies:
+      graceful-fs: 4.1.11
+    resolution: 4088433b46b3b1ba259d78785d8e96f73ba02439
+  /lodash._baseclone/4.5.7: ce42ade08384ef5d62fa77c30f61a46e686f8434
+  /lodash.clone/4.3.2:
+    dependencies:
+      lodash._baseclone: 4.5.7
+    resolution: e56b176b6823a7dde38f7f2bf58de7d5971200e9
+  /lodash.map/4.6.0: 771ec7839e3473d9c4cde28b19394c3562f4f6d3
+  /lodash/4.17.2: 34a3055babe04ce42467b607d700072c7ff6bf42
+  /lodash/4.17.4: 78203a4d1c328ae1d86dca6460e369b57f4055ae
+  /longest/1.0.1: 30a0b2da38f73770e8294a0d22e6625ed77d0097
+  /lru-cache/4.0.2:
+    dependencies:
+      pseudomap: 1.0.2
+      yallist: 2.1.2
+    resolution: 1d17679c069cda5d040991a09dbc2c0db377e55e
+  /manage-path/2.0.0: f4cf8457b926eeee2a83b173501414bc76eb9597
+  /merge/1.2.0: 7531e39d4949c281a66b8c5a6e0265e8b05894da
+  /micromatch/2.3.11:
+    dependencies:
+      arr-diff: 2.0.0
+      array-unique: 0.2.1
+      braces: 1.8.5
+      expand-brackets: 0.1.5
+      extglob: 0.3.2
+      filename-regex: 2.0.0
+      is-extglob: 1.0.0
+      is-glob: 2.0.1
+      kind-of: 3.1.0
+      normalize-path: 2.1.1
+      object.omit: 2.0.1
+      parse-glob: 3.0.4
+      regex-cache: 0.4.3
+    resolution: 86677c97d1720b363431d04d0d15293bd38c1565
+  /minimatch/3.0.3:
+    dependencies:
+      brace-expansion: 1.1.6
+    resolution: 2a4e4090b96b2db06a9d7df01055a62a77c9b774
+  /minimist/0.0.10: de3f98543dbf96082be48ad1a0c7cda836301dcf
+  /minimist/1.2.0: a35008b20f41383eec1fb914f4cd5df79a264284
+  /mute-stream/0.0.6: 48962b19e169fd1dfc240b3f1e7317627bbc47db
+  /normalize-path/2.1.1:
+    dependencies:
+      remove-trailing-separator: 1.0.1
+    resolution: 1ab28b556e198363a8c1a6f7e6fa20137fe6aed9
+  /npm-run-path/1.0.0:
+    dependencies:
+      path-key: 1.0.0
+    resolution: f5c32bf595fe81ae927daec52e82f8b000ac3c8f
+  /number-is-nan/1.0.1: 097b602b53422a522c1afb8790318336941a011d
+  /object-assign/4.1.1: 2109adc7965887cfc05cbbd442cac8bfbb360863
+  /object.omit/2.0.1:
+    dependencies:
+      for-own: 0.1.5
+      is-extendable: 0.1.1
+    resolution: 1a9c744829f39dbb858c76ca3579ae2a54ebd1fa
+  /once/1.4.0:
+    dependencies:
+      wrappy: 1.0.2
+    resolution: 583b1aa775961d4b113ac17d9c50baef9dd76bd1
+  /onetime/1.1.0: a1f7838f8314c516f05ecefcbc4ccfe04b4ed789
+  /opt-cli/1.5.1:
+    dependencies:
+      commander: 2.9.0
+      lodash.clone: 4.3.2
+      manage-path: 2.0.0
+      spawn-command: 0.0.2-1
+    resolution: 04db447b13c96b992eb31685266f4ed0d9736dc2
+  /optimist/0.6.1:
+    dependencies:
+      minimist: 0.0.10
+      wordwrap: 0.0.3
+    resolution: da3ea74686fa21a19a111c326e90eb15a0196686
+  /os-homedir/1.0.2: ffbc4988336e0e833de0c168c7ef152121aa7fb3
+  /os-shim/0.1.3: 6b62c3791cf7909ea35ed46e17658bb417cb3917
+  /os-tmpdir/1.0.2: bbe67406c79aa85c5cfec766fe5734555dfa1274
+  /pad-right/0.2.2:
+    dependencies:
+      repeat-string: 1.6.1
+    resolution: 6fbc924045d244f2a2a244503060d3bfc6009774
+  /parse-glob/3.0.4:
+    dependencies:
+      glob-base: 0.3.0
+      is-dotfile: 1.0.2
+      is-extglob: 1.0.0
+      is-glob: 2.0.1
+    resolution: b2c376cfb11f35513badd173ef0bb6e3a388391c
+  /parse-passwd/1.0.0: 6d5b934a456993b23d37f40a382d6f1666a8e5c6
+  /path-exists/2.1.0:
+    dependencies:
+      pinkie-promise: 2.0.1
+    resolution: 0feb6c64f0fc518d9a754dd5efb62c7022761f4b
+  /path-is-absolute/1.0.1: 174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f
+  /path-key/1.0.0: 5d53d578019646c0d68800db4e146e6bdc2ac7af
+  /path-parse/1.0.5: 3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1
+  /pinkie-promise/2.0.1:
+    dependencies:
+      pinkie: 2.0.4
+    resolution: 2135d6dfa7a358c069ac9b178776288228450ffa
+  /pinkie/2.0.4: 72556b80cfa0d48a974e80e77248e80ed4f7f870
+  /preserve/0.2.0: 815ed1f6ebc65926f865b310c0713bcb3315ce4b
+  /process-nextick-args/1.0.7: 150e20b756590ad3f91093f25a4f2ad8bff30ba3
+  /pseudomap/1.0.2: f052a28da70e618917ef0a8ac34c1ae5a68286b3
+  /randomatic/1.1.6:
+    dependencies:
+      is-number: 2.1.0
+      kind-of: 3.1.0
+    resolution: 110dcabff397e9dcff7c0789ccc0a49adf1ec5bb
+  /readable-stream/2.2.6:
+    dependencies:
+      buffer-shims: 1.0.0
+      core-util-is: 1.0.2
+      inherits: 2.0.3
+      isarray: 1.0.0
+      process-nextick-args: 1.0.7
+      string_decoder: 0.10.31
+      util-deprecate: 1.0.2
+    resolution: 8b43aed76e71483938d12a8d46c6cf1a00b1f816
+  /rechoir/0.6.2:
+    dependencies:
+      resolve: 1.3.2
+    resolution: 85204b54dba82d5742e28c96756ef43af50e3384
+  /regex-cache/0.4.3:
+    dependencies:
+      is-equal-shallow: 0.1.3
+      is-primitive: 2.0.0
+    resolution: 9b1a6c35d4d0dfcef5711ae651e8e9d3d7114145
+  /remove-trailing-separator/1.0.1: 615ebb96af559552d4bf4057c8436d486ab63cc4
+  /repeat-element/1.1.2: ef089a178d1483baae4d93eb98b4f9e4e11d990a
+  /repeat-string/1.6.1: 8dcae470e1c88abc2d600fff4a776286da75e637
+  /repeating/2.0.1:
+    dependencies:
+      is-finite: 1.0.2
+    resolution: 5214c53a926d3552707527fbab415dbc08d06dda
+  /resolve-dir/0.1.1:
+    dependencies:
+      expand-tilde: 1.2.2
+      global-modules: 0.2.3
+    resolution: b219259a5602fac5c5c496ad894a6e8cc430261e
+  /resolve/1.3.2:
+    dependencies:
+      path-parse: 1.0.5
+    resolution: 1f0442c9e0cbb8136e87b9305f932f46c7f28235
+  /restore-cursor/1.0.1:
+    dependencies:
+      exit-hook: 1.1.1
+      onetime: 1.1.0
+    resolution: 34661f46886327fed2991479152252df92daa541
+  /right-pad/1.0.1: 8ca08c2cbb5b55e74dafa96bf7fd1a27d568c8d0
+  /rimraf/2.6.1:
+    dependencies:
+      glob: 7.1.1
+    resolution: c2338ec643df7a1b7fe5c54fa86f57428a55f33d
+  /run-async/2.3.0:
+    dependencies:
+      is-promise: 2.1.0
+    resolution: 0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0
+  /rx/4.1.0: a5f13ff79ef3b740fe30aa803fb09f98805d4782
+  /semver-regex/1.0.0: 92a4969065f9c70c694753d55248fc68f8f652c9
+  /semver/5.3.0: 9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f
+  /shelljs/0.7.6:
+    dependencies:
+      glob: 7.1.1
+      interpret: 1.0.2
+      rechoir: 0.6.2
+    resolution: 379cccfb56b91c8601e4793356eb5382924de9ad
+  /spawn-command/0.0.2: 9544e1a43ca045f8531aac1a48cb29bdae62338e
+  /spawn-command/0.0.2-1: 62f5e9466981c1b796dc5929937e11c9c6921bd0
+  /spawn-sync/1.0.15:
+    dependencies:
+      concat-stream: 1.6.0
+      os-shim: 0.1.3
+    resolution: b00799557eb7fb0c8376c29d44e8a1ea67e57476
+  /string-width/1.0.2:
+    dependencies:
+      code-point-at: 1.1.0
+      is-fullwidth-code-point: 1.0.0
+      strip-ansi: 3.0.1
+    resolution: 118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3
+  /string_decoder/0.10.31: 62e203bc41766c6c28c9fc84301dab1c5310fa94
+  /strip-ansi/3.0.1:
+    dependencies:
+      ansi-regex: 2.1.1
+    resolution: 6a385fb8853d952d5ff05d0e8aaf94278dc63dcf
+  /strip-eof/1.0.0: bb43ff5598a6eb05d89b59fcd129c983313606bf
+  /strip-json-comments/2.0.1: 3c531942e908c2697c0ec344858c286c7ca0a60a
+  /supports-color/2.0.0: 535d045ce6b6363fa40117084629995e9df324c7
+  /through/2.3.8: 0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5
+  /tmp/0.0.29:
+    dependencies:
+      os-tmpdir: 1.0.2
+    resolution: f25125ff0dd9da3ccb0c2dd371ee1288bb9128c0
+  /tslint/5.0.0:
+    dependencies:
+      babel-code-frame: 6.22.0
+      colors: 1.1.2
+      diff: 3.2.0
+      findup-sync: 0.3.0
+      glob: 7.1.1
+      optimist: 0.6.1
+      resolve: 1.3.2
+      semver: 5.3.0
+      tsutils: 1.6.0
+    resolution: ad3b7952f8a9b21079248bee01c2eaf92167e185
+  /tsutils/1.6.0: 1fd7fac2a61369ed99cd3997f0fbb437128850f2
+  /typedarray/0.0.6: 867ac74e3864187b1d3d47d996a78ec5c8830777
+  /typescript/2.2.2: 606022508479b55ffa368b58fee963a03dfd7b0c
+  /util-deprecate/1.0.2: 450d4dc9fa70de732762fbd2d4a28981419a0ccf
+  /validate-commit-msg/2.12.1:
+    dependencies:
+      conventional-commit-types: 2.1.0
+      find-parent-dir: 0.3.0
+      findup: 0.1.5
+      semver-regex: 1.0.0
+    resolution: 612b61bc9f09f0fee5130de3648870d01cdddf1d
+  /which/1.2.14:
+    dependencies:
+      isexe: 2.0.0
+    resolution: 9a87c4378f03e827cecaf1acdf56c736c01c14e5
+  /word-wrap/1.2.1: 248f459b465d179a17bc407c854d3151d07e45d8
+  /wordwrap/0.0.3: a3d5da6cd5c0bc0008d37234bbaf1bed63059107
+  /wrappy/1.0.2: b5243d8f3ec1aa35f1364605bc0d1036e30ab69f
+  /yallist/2.1.2: 1c11f9218f076089a47dd512f93c6699a6a81d52
+registry: 'https://registry.npmjs.org/'
+version: 2
