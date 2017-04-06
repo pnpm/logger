@@ -8,18 +8,26 @@ export type LifecycleMessage = {
 }
 
 export type ProgressMessage = {
+  pkgId: string,
+  status: 'fetched' | 'installed' | 'dependencies_installed',
+} | {
+  pkgId: string,
   pkg: LoggedPkg,
-  status: 'resolving'
-    | 'resolved'
-    | 'fetching'
-    | 'fetched'
-    | 'error'
-    | 'installing'
-    | 'installed',
+  status: 'resolved',
+} | {
+  pkg: LoggedPkg,
+  status: 'resolving' | 'error' | 'installing',
+} | {
+  pkgId: string,
+  status: 'fetching',
   progress?: {
     done: number,
     total: number,
   },
+} | {
+  status: 'downloaded_manifest',
+  pkgId: string,
+  pkgVersion: string,
 }
 
 export type InstallCheckMessage = {
@@ -41,6 +49,5 @@ export type InstallCheckLog = Log & InstallCheckMessage
 export type LoggedPkg = {
   rawSpec: string,
   name: string,
-  version?: string,
   dependentId?: string,
 }
