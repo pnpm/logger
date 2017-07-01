@@ -9,7 +9,7 @@ export type LifecycleMessage = {
 
 export type ProgressMessage = {
   pkgId: string,
-  status: 'fetched' | 'installed' | 'dependencies_installed',
+  status: 'fetched' | 'installed' | 'dependencies_installed' | 'found_in_store' | 'resolving_content',
 } | {
   pkgId: string,
   pkg: LoggedPkg,
