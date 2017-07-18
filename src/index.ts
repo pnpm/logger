@@ -1,4 +1,11 @@
+import streamParser from './streamParser'
+import writeToConsole from './writeToConsole'
+
+export {streamParser, writeToConsole}
+
 import bole = require('bole')
+
+bole.setFastTime()
 
 const baseLogger = bole('pnpm')
 
