@@ -1,8 +1,12 @@
 import ndjson = require('ndjson')
 import bole = require('bole')
+import {Log} from '.'
+
+export type Reporter = (logObj: Log) => void
 
 export type StreamParser = {
-  on: Function,
+  on: (event: 'data', reporter: Reporter) => void,
+  removeListener: (event: 'data', reporter: Reporter) => void,
 }
 
 const streamParser: StreamParser = ndjson.parse()
