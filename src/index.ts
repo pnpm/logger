@@ -61,6 +61,7 @@ export type DeprecationMessage = {
   pkgVersion: string,
   pkgId: string,
   deprecated: string,
+  depth: number,
 }
 
 export type RootMessage = {
