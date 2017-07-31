@@ -64,16 +64,19 @@ export type DeprecationMessage = {
   depth: number,
 }
 
+export type DependencyType = 'prod' | 'dev' | 'optional'
+
 export type RootMessage = {
   added: {
     name: string,
     version: string,
-    id: string,
+    dependencyType: DependencyType,
   },
 } | {
   removed: {
     name: string,
     version?: string,
+    dependencyType: DependencyType,
   },
 }
 
