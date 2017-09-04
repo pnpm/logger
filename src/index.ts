@@ -1,7 +1,11 @@
-import streamParser from './streamParser'
+import streamParser, {createStreamParser} from './streamParser'
 import writeToConsole from './writeToConsole'
 
-export {streamParser, writeToConsole}
+export {
+  streamParser,
+  createStreamParser,
+  writeToConsole,
+}
 
 import bole = require('bole')
 

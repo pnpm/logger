@@ -17,3 +17,13 @@ bole.output([
 ])
 
 export default streamParser
+
+export function createStreamParser () {
+  const streamParser: StreamParser = ndjson.parse()
+  bole.output([
+    {
+      level: 'debug', stream: streamParser
+    },
+  ])
+  return streamParser
+}
