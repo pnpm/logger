@@ -40,11 +40,12 @@ export type ProgressMessage = {
   status: 'resolving' | 'error' | 'installing',
 } | {
   pkgId: string,
-  status: 'fetching',
-  progress?: {
-    done: number,
-    total: number,
-  },
+  status: 'fetching_started',
+  size: number | null,
+} | {
+  pkgId: string,
+  status: 'fetching_progress',
+  downloaded: number,
 } | {
   status: 'downloaded_manifest',
   pkgId: string,
