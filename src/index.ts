@@ -42,6 +42,7 @@ export type ProgressMessage = {
   pkgId: string,
   status: 'fetching_started',
   size: number | null,
+  attempt: number,
 } | {
   pkgId: string,
   status: 'fetching_progress',
