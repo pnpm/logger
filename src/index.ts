@@ -25,8 +25,12 @@ export const summaryLogger = baseLogger('summary') as Logger<void>
 
 export type LifecycleMessage = {
   pkgId: string,
+  script: string,
+} & ({
   line: string,
-}
+} | {
+  exitCode: number,
+})
 
 export type ProgressMessage = {
   pkgId: string,
