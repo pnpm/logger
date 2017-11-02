@@ -57,16 +57,16 @@ export type ProgressMessage = {
   pkgVersion: string,
 }
 
-export type InstallCheckMessage = {
+export interface InstallCheckMessage {
   code: string,
   pkgId: string,
 }
 
-export type LogBase = {
+export interface LogBase {
   level: 'debug' | 'info' | 'warn' | 'error',
 }
 
-export type DeprecationMessage = {
+export interface DeprecationMessage {
   pkgName: string,
   pkgVersion: string,
   pkgId: string,
@@ -90,7 +90,7 @@ export type RootMessage = {
   },
 }
 
-export type StandardMessage = {message: string}
+export interface StandardMessage {message: string}
 
 export type ProgressLog = {name: 'pnpm:progress'} & LogBase & ProgressMessage
 
@@ -118,13 +118,13 @@ export type Log = ProgressLog
   | SummaryLog
   | ({name: 'pnpm'} & LogBase)
 
-export type LoggedPkg = {
+export interface LoggedPkg {
   rawSpec: string,
   name: string,
   dependentId?: string,
 }
 
-export type Logger<T> = {
+export interface Logger<T> {
   debug: (log: T) => void,
   info: (log: T) => void,
   warn: (log: T) => void,

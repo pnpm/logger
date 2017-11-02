@@ -1,10 +1,10 @@
-import ndjson = require('ndjson')
 import bole = require('bole')
+import ndjson = require('ndjson')
 import {Log} from '.'
 
 export type Reporter = (logObj: Log) => void
 
-export type StreamParser = {
+export interface StreamParser {
   on: (event: 'data', reporter: Reporter) => void,
   removeListener: (event: 'data', reporter: Reporter) => void,
 }
@@ -12,18 +12,18 @@ export type StreamParser = {
 const streamParser: StreamParser = ndjson.parse()
 bole.output([
   {
-    level: 'debug', stream: streamParser
+    level: 'debug', stream: streamParser,
   },
 ])
 
 export default streamParser
 
-export function createStreamParser () {
-  const streamParser: StreamParser = ndjson.parse()
+export function createStreamParser() {
+  const sp: StreamParser = ndjson.parse()
   bole.output([
     {
-      level: 'debug', stream: streamParser
+      level: 'debug', stream: sp,
     },
   ])
-  return streamParser
+  return sp
 }
