@@ -22,6 +22,7 @@ export const progressLogger = baseLogger('progress') as Logger<ProgressMessage>
 export const lifecycleLogger = baseLogger('lifecycle') as Logger<LifecycleMessage>
 export const stageLogger = baseLogger('stage') as Logger<'resolution_done'>
 export const summaryLogger = baseLogger('summary') as Logger<void>
+export const manifestLogger = baseLogger('manifest') as Logger<ManifestMessage>
 
 export type LifecycleMessage = {
   pkgId: string,
@@ -90,6 +91,12 @@ export type RootMessage = {
   },
 }
 
+export type ManifestMessage = {
+  initial: object
+} | {
+  updated: object
+}
+
 export interface StandardMessage {message: string}
 
 export type ProgressLog = {name: 'pnpm:progress'} & LogBase & ProgressMessage
@@ -108,6 +115,8 @@ export type RootLog = {name: 'pnpm:root'} & LogBase & RootMessage
 
 export type SummaryLog = {name: 'pnpm:summary'} & LogBase
 
+export type ManifestLog = {name: 'pnpm:manifest'} & LogBase & ManifestMessage
+
 export type Log = ProgressLog
   | LifecycleLog
   | InstallCheckLog
@@ -116,6 +125,7 @@ export type Log = ProgressLog
   | RegistryLog
   | RootLog
   | SummaryLog
+  | ManifestLog
   | ({name: 'pnpm'} & LogBase)
 
 export interface LoggedPkg {
