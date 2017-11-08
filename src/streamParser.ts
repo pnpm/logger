@@ -1,8 +1,8 @@
 import bole = require('bole')
 import ndjson = require('ndjson')
-import {Log} from '.'
+import {LogBase} from '.'
 
-export type Reporter = (logObj: Log) => void
+export type Reporter = (logObj: LogBase) => void
 
 export interface StreamParser {
   on: (event: 'data', reporter: Reporter) => void,
