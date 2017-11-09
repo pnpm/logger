@@ -16,11 +16,19 @@
     "type": "git",
     "url": "git+https://github.com/pnpm/pnpm-logger.git"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "keywords": [
     "pnpm",
     "logger"
   ],
-  "author": "Zoltan Kochan",
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "z@kochan.io",
+    "url": "https://www.kochan.io/",
+    "twitter": "ZoltanKochan"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pnpm/pnpm-logger/issues"
@@ -34,6 +42,8 @@
   "devDependencies": {
     "commitizen": "^2.9.5",
     "ghooks": "^2.0.0",
+    "mos": "^2.0.0-alpha.3",
+    "mos-plugin-readme": "^1.0.4",
     "rimraf": "^2.5.4",
     "tslint": "^5.0.0",
     "typescript": "^2.1.5",
@@ -45,6 +55,14 @@
     },
     "ghooks": {
       "commit-msg": "node ./node_modules/validate-commit-msg/index.js"
+    }
+  },
+  "mos": {
+    "plugins": [
+      "readme"
+    ],
+    "installation": {
+      "useShortAlias": true
     }
   }
 }
