@@ -1,5 +1,5 @@
 {
-  "name": "pnpm-logger",
+  "name": "@pnpm/logger",
   "version": "0.7.1",
   "description": "Logger for pnpm",
   "main": "lib/index.js",
@@ -8,13 +8,13 @@
     "lib"
   ],
   "scripts": {
-    "test": "tslint -c tslint.json --project . && preview && ts-node test",
+    "test": "tslint -c tslint.json --project . && preview && ts-node test && mos t",
     "tsc": "rimraf lib && tsc",
     "prepublishOnly": "npm run tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pnpm/pnpm-logger.git"
+    "url": "git+https://github.com/pnpm/logger.git"
   },
   "engines": {
     "node": ">=4"
@@ -31,9 +31,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pnpm/pnpm-logger/issues"
+    "url": "https://github.com/pnpm/logger/issues"
   },
-  "homepage": "https://github.com/pnpm/pnpm-logger#readme",
+  "homepage": "https://github.com/pnpm/logger#readme",
   "dependencies": {
     "@types/node": "^8.0.51",
     "bole": "^3.0.2",
