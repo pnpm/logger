@@ -1,5 +1,5 @@
 dependencies:
-  '@types/node': 8.0.47
+  '@types/node': 8.0.51
   bole: 3.0.2
   ndjson: 1.5.0
 devDependencies:
@@ -66,14 +66,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
-  /@types/node/8.0.47:
-    dev: false
-    resolution:
-      integrity: sha512-kOwL746WVvt/9Phf6/JgX/bsGQvbrK5iUgzyfwZNcKVFcjAUVSpF9HxevLTld2SG9aywYHOILj38arDdY1r/iQ==
   /@types/node/8.0.50:
     dev: true
     resolution:
       integrity: sha512-N9OVsMBspboNvYaLAQnLEhb2eQ96lavogMR5LoH5k8nb1PvBZHSBFhzhsq2LNzGTBBOtBviOc1GiSu+wlM/pGw==
+  /@types/node/8.0.51:
+    dev: false
+    resolution:
+      integrity: sha512-El3+WJk2D/ppWNd2X05aiP5l2k4EwF7KwheknQZls+I26eSICoWRhRIJ56jGgw2dqNGQ5LtNajmBU2ajS28EvQ==
   /@types/tape/4.2.31:
     dependencies:
       '@types/node': 8.0.50
@@ -3665,7 +3665,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 2
 shrinkwrapVersion: 3
 specifiers:
-  '@types/node': ^8.0.14
+  '@types/node': ^8.0.51
   '@types/tape': ^4.2.31
   bole: ^3.0.2
   commitizen: ^2.9.5
