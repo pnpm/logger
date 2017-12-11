@@ -8,7 +8,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "tslint -c tslint.json --project . && preview && ts-node test && mos t",
+    "test": "tslint -c tslint.json --project . && preview && ts-node test --type-check && mos t",
     "tsc": "rimraf lib && tsc",
     "prepublishOnly": "npm run tsc"
   },
@@ -48,7 +48,7 @@
     "package-preview": "^1.0.0",
     "rimraf": "^2.5.4",
     "tape": "^4.8.0",
-    "ts-node": "^3.3.0",
+    "ts-node": "^4.0.0",
     "tslint": "^5.0.0",
     "typescript": "^2.1.5",
     "validate-commit-msg": "^2.8.2"
