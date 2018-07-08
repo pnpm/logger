@@ -7,5 +7,5 @@ test('logger logs', t => {
     t.end()
   })
 
-  logger.info('foo')
+  logger.info({message: 'foo', prefix: process.cwd()})
 })
