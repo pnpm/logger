@@ -1,5 +1,4 @@
 import logger, {
-  LogError,
   Logger,
 } from './logger'
 import streamParser, {
@@ -16,5 +15,4 @@ export {
   writeToConsole,
   LogBase,
   Logger,
-  LogError,
 }
