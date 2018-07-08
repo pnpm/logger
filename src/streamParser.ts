@@ -1,9 +1,13 @@
 import bole = require('bole')
 import ndjson = require('ndjson')
 
-export interface LogBase {
-  level: 'debug' | 'info' | 'warn' | 'error',
-}
+export type LogBase = ({
+  level: 'debug' | 'error',
+} | {
+  level: 'info' | 'warn',
+  prefix: string,
+  message: string,
+})
 
 export type Reporter = (logObj: LogBase) => void
 
