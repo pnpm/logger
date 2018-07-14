@@ -11,3 +11,12 @@ export interface Logger<T> {
   warn: (log: {message: string, prefix: string, error?: Error}) => void,
   error: (err: Error, log?: string | Error) => void,
 }
+
+export const storeLogger = bole('pnpm:store') as StoreLogger<object>
+
+export interface StoreLogger<T> {
+  debug: (log?: T) => void,
+  info: (message: string) => void,
+  warn: (message: string) => void,
+  error: (err: Error, log?: string | Error) => void,
+}
