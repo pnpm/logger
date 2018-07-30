@@ -1,6 +1,5 @@
 dependencies:
-  '@pnpm/logger': 'link:../__package_previews__/logger/@pnpm/logger'
-  '@types/node': 10.5.2
+  '@types/node': 10.5.4
   bole: 3.0.2
   ndjson: 1.5.0
 devDependencies:
@@ -13,15 +12,15 @@ devDependencies:
   rimraf: 2.6.2
   tape: 4.9.1
   ts-node: 7.0.0
-  tslint: 5.10.0
-  typescript: 2.9.2
+  tslint: 5.11.0
+  typescript: 3.0.1
   validate-commit-msg: 2.14.0
 packages:
   /@pnpm/exec/1.1.5:
     dependencies:
       '@pnpm/self-installer': 2.0.5
-      '@types/got': 8.3.2
-      '@types/node': 10.5.2
+      '@types/got': 8.3.3
+      '@types/node': 10.5.4
       command-exists: 1.2.7
       cross-spawn: 6.0.5
     dev: true
@@ -37,32 +36,32 @@ packages:
       integrity: sha512-NnkmxKFQJMkHL2TcLAl2sof7mVu8dgode4zGzwtvEaZ/xjOHm3CfUJomincmZcpWoXrjHkvbPxjczEPP41Wmqg==
   /@types/fs-extra/5.0.4:
     dependencies:
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
     dev: true
     resolution:
       integrity: sha512-DsknoBvD8s+RFfSGjmERJ7ZOP1HI0UZRA3FSI+Zakhrc/Gy26YQsLI+m5V5DHxroHRJqCDLKJp7Hixn8zyaF7g==
-  /@types/got/8.3.2:
+  /@types/got/8.3.3:
     dependencies:
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
     dev: true
     resolution:
-      integrity: sha512-279dKa5CgaJ1sYxLyKULh+rtGSmSGiY/9FScEIxbUQZgCKieApw1v6UmKkKigzRBcypC7LbvSfSR/0SYbsewvQ==
+      integrity: sha512-OXZz0iG3oX9RHTZAeVGJQCjCOGx0r7MnSWebgUoX5CiFq0aVcRJrUPLQo/dBdKOaosbp4K9NTZTSec2zWk9YIg==
   /@types/load-json-file/2.0.7:
     dev: true
     resolution:
       integrity: sha512-NrH6jPlV77QCVPhAHofWeiOr77TgpKt82c2RVxSBChWBJqyY/u4ngl3CA4mcsAg/w7rNLrkR7dkObMV0ihLLXw==
   /@types/mz/0.0.32:
     dependencies:
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
     dev: true
     resolution:
       integrity: sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
-  /@types/node/10.5.2:
+  /@types/node/10.5.4:
     resolution:
-      integrity: sha512-m9zXmifkZsMHZBOyxZWilMwmTlpC8x5Ty360JKTiXvlXZfBWYpsg9ZZvP/Ye+iZUh+Q+MxDLjItVTWIsfwz+8Q==
+      integrity: sha512-8TqvB0ReZWwtcd3LXq3YSrBoLyXFgBX/sBZfGye9+YS8zH7/g+i6QRIuiDmwBoTzcQ/pk89nZYTYU4c5akKkzw==
   /@types/tape/4.2.32:
     dependencies:
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
     dev: true
     resolution:
       integrity: sha512-xil0KO5wkPoixdBWGIGolPv9dekf6dVkjjJLAFYchfKcd4DICou67rgGCIO7wAh3i5Ff/6j9IDgZz+GU9cMaqQ==
@@ -993,13 +992,13 @@ packages:
       node: '>=0.8.0'
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  /esprima/4.0.0:
+  /esprima/4.0.1:
     dev: true
     engines:
       node: '>=4'
     hasBin: true
     resolution:
-      integrity: sha512-oftTcaMu/EGrEIu904mWteKIv8vMuOgGYo7EhVJJN00R/EED9DCua/xxHRdYnKtcECzVg7xOWhflvJMnqcFZjw==
+      integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
   /estree-walker/0.2.1:
     dev: true
     resolution:
@@ -1044,13 +1043,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-C4HrqJflo9MdHD0QL48BRB5VlEk=
-  /extend/3.0.1:
+  /extend/3.0.2:
     dev: true
     resolution:
-      integrity: sha1-p1Xqe8Gt/MWjHOfnYtuq3F5jZEQ=
+      integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
   /external-editor/1.1.1:
     dependencies:
-      extend: 3.0.1
+      extend: 3.0.2
       spawn-sync: 1.0.15
       tmp: 0.0.29
     dev: true
@@ -1554,7 +1553,7 @@ packages:
       integrity: sha1-ftGxQQxqDg94z5XTuEQMY/eLhhQ=
   /invariant/2.2.4:
     dependencies:
-      loose-envify: 1.3.1
+      loose-envify: 1.4.0
     dev: true
     resolution:
       integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -1796,10 +1795,14 @@ packages:
     dev: true
     resolution:
       integrity: sha1-mGbfOVECEw449/mWvOtlRDIJwls=
+  /js-tokens/4.0.0:
+    dev: true
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
   /js-yaml/3.12.0:
     dependencies:
       argparse: 1.0.10
-      esprima: 4.0.0
+      esprima: 4.0.1
     dev: true
     hasBin: true
     resolution:
@@ -1942,13 +1945,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
-  /loose-envify/1.3.1:
+  /loose-envify/1.4.0:
     dependencies:
-      js-tokens: 3.0.2
+      js-tokens: 4.0.0
     dev: true
     hasBin: true
     resolution:
-      integrity: sha1-0aitM/qc4OcT1l/dCsi3SNR4yEg=
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   /loud-rejection/1.6.0:
     dependencies:
       currently-unhandled: 0.4.1
@@ -2599,7 +2602,7 @@ packages:
       '@types/fs-extra': 5.0.4
       '@types/load-json-file': 2.0.7
       '@types/mz': 0.0.32
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
       '@types/write-json-file': 2.2.1
       cross-spawn: 6.0.5
       find-down: 0.1.4
@@ -3492,7 +3495,7 @@ packages:
   /symlink-dir/1.1.3:
     dependencies:
       '@types/mz': 0.0.32
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
       graceful-fs: 4.1.11
       is-windows: 1.0.2
       mkdirp-promise: 5.0.1
@@ -3680,7 +3683,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
-  /tslint/5.10.0:
+  /tslint/5.11.0:
     dependencies:
       babel-code-frame: 6.26.0
       builtin-modules: 1.1.1
@@ -3693,7 +3696,7 @@ packages:
       resolve: 1.8.1
       semver: 5.5.0
       tslib: 1.9.3
-      tsutils: 2.27.2
+      tsutils: 2.29.0
     dev: true
     engines:
       node: '>=4.8.0'
@@ -3701,26 +3704,26 @@ packages:
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev'
     resolution:
-      integrity: sha1-EeJrzLiK+gLdDZlWyuPUVAtfVMM=
-  /tsutils/2.27.2:
+      integrity: sha1-mPMMAurjzecAYgHkwzywi0hYHu0=
+  /tsutils/2.29.0:
     dependencies:
       tslib: 1.9.3
     dev: true
     peerDependencies:
-      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev'
+      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
     resolution:
-      integrity: sha512-qf6rmT84TFMuxAKez2pIfR8UCai49iQsfB7YWVjV1bKpy/d0PWT5rEOSM6La9PiHZ0k1RRZQiwVdVJfQ3BPHgg==
+      integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
   /typedarray/0.0.6:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/2.9.2:
+  /typescript/3.0.1:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
+      integrity: sha512-zQIMOmC+372pC/CCVLqnQ0zSBiY7HHodU7mpQdjiZddek4GMj31I3dUJ7gAs9o65X7mnRma6OokOkc6f9jjfBg==
   /unbzip2-stream/1.2.5:
     dependencies:
       buffer: 3.6.0
@@ -3734,16 +3737,22 @@ packages:
       integrity: sha512-YkXBK/H9raAmG7KXck+UUpnKiNmUdB+aBGrknfQ4EreE1banuzrKABx3jP6Z5Z3fMSPMQQmeXBlKpCbMwBkxVw==
   /unist-util-remove-position/1.1.2:
     dependencies:
-      unist-util-visit: 1.3.1
+      unist-util-visit: 1.4.0
     dev: true
     resolution:
       integrity: sha512-XxoNOBvq1WXRKXxgnSYbtCF76TJrRoe5++pD4cCBsssSiWSnPEktyFrFLE8LTk3JW5mt9hB0Sk5zn4x/JeWY7Q==
-  /unist-util-visit/1.3.1:
+  /unist-util-visit-parents/2.0.1:
     dependencies:
       unist-util-is: 2.1.2
     dev: true
     resolution:
-      integrity: sha512-0fdB9EQJU0tho5tK0VzOJzAQpPv2LyLZ030b10GxuzAWEfvd54mpY7BMjQ1L69k2YNvL+SvxRzH0yUIehOO8aA==
+      integrity: sha512-6B0UTiMfdWql4cQ03gDTCSns+64Zkfo2OCbK31Ov0uMizEz+CJeAp0cgZVb5Fhmcd7Bct2iRNywejT0orpbqUA==
+  /unist-util-visit/1.4.0:
+    dependencies:
+      unist-util-visit-parents: 2.0.1
+    dev: true
+    resolution:
+      integrity: sha512-FiGu34ziNsZA3ZUteZxSFaczIjGmksfSgdKqBfOejrrfzyUy5b7YrlzT1Bcvi+djkYDituJDy2XB7tGTeBieKw==
   /universalify/0.1.2:
     dev: true
     engines:
@@ -3752,7 +3761,7 @@ packages:
       integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
   /unpack-stream/3.0.3:
     dependencies:
-      '@types/node': 10.5.2
+      '@types/node': 10.5.4
       decompress-maybe: 1.0.0
       ssri: 5.3.0
       tar-fs: 1.16.3
@@ -3931,5 +3940,5 @@ specifiers:
   tape: ^4.8.0
   ts-node: ^7.0.0
   tslint: ^5.0.0
-  typescript: ^2.1.5
+  typescript: ^3.0.0
   validate-commit-msg: ^2.8.2
