@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-npm i -S @pnpm/logger
+<pnpm|yarn|npm> add @pnpm/logger
 ```
 
 ## Usage
