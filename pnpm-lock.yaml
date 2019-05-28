@@ -1,8 +1,8 @@
 dependencies:
-  '@types/node': 10.14.7
   bole: 3.0.2
   ndjson: 1.5.0
 devDependencies:
+  '@types/node': 12.0.3
   '@types/tape': 4.2.33
   commitizen: 3.1.1
   ghooks: 2.0.4
@@ -11,7 +11,7 @@ devDependencies:
   package-preview: 2.0.0
   rimraf: 2.6.3
   tape: 4.10.2
-  ts-node: 7.0.1
+  ts-node: 8.2.0
   tslint: 5.16.0
   typescript: 3.4.5
   validate-commit-msg: 2.14.0
@@ -72,8 +72,13 @@ packages:
     resolution:
       integrity: sha512-cy3yebKhrHuOcrJGkfwNHhpTXQLgmXSv1BX+4p32j+VUQ6aP2eJ5cL7OvGcAQx75fCTFaAIIAKewvqL+iwSd4g==
   /@types/node/10.14.7:
+    dev: true
     resolution:
       integrity: sha512-on4MmIDgHXiuJDELPk1NFaKVUxxCFr37tm8E9yN6rAiF5Pzp/9bBfBHkoexqRiY+hk/Z04EJU9kKEb59YqJ82A==
+  /@types/node/12.0.3:
+    dev: true
+    resolution:
+      integrity: sha512-zkOxCS/fA+3SsdA+9Yun0iANxzhQRiNwTvJSr6N95JhuJ/x27z9G2URx1Jpt3zYFfCGUXZGL5UDxt5eyLE7wgw==
   /@types/tape/4.2.33:
     dependencies:
       '@types/node': 10.14.7
@@ -154,6 +159,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-q8av7tzqUugJzcA3au0845Y10X8=
+  /arg/4.1.0:
+    dev: true
+    resolution:
+      integrity: sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -992,6 +1001,12 @@ packages:
       node: '>=0.3.1'
     resolution:
       integrity: sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
+  /diff/4.0.1:
+    dev: true
+    engines:
+      node: '>=0.3.1'
+    resolution:
+      integrity: sha512-s2+XdvhPCOF01LRQBC8hf4vhbVmI2CGS5aZnxLJlT5FtdhPCDFq80q++zK2KlrVorVDdL5BOGZ/VfLrVtYNF+Q==
   /dot-prop/3.0.0:
     dependencies:
       is-obj: 1.0.1
@@ -3868,22 +3883,21 @@ packages:
     dev: true
     resolution:
       integrity: sha1-WFhUf2spB1fulczMZm+1AITEYN0=
-  /ts-node/7.0.1:
+  /ts-node/8.2.0:
     dependencies:
-      arrify: 1.0.1
-      buffer-from: 1.1.1
-      diff: 3.5.0
+      arg: 4.1.0
+      diff: 4.0.1
       make-error: 1.3.5
-      minimist: 1.2.0
-      mkdirp: 0.5.1
       source-map-support: 0.5.12
-      yn: 2.0.0
+      yn: 3.1.0
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
+    peerDependencies:
+      typescript: '>=2.0'
     resolution:
-      integrity: sha512-BVwVbPJRspzNh2yfslyT1PSbl5uIk03EZlb493RKHN4qej/D06n1cEhjlOJG69oFsE7OT8XjpTUcYf6pKTLMhw==
+      integrity: sha512-m8XQwUurkbYqXrKqr3WHCW310utRNvV5OnRVeISeea7LoCWVcdfeB/Ntl8JYWFh+WRoUAdBgESrzKochQt7sMw==
   /tslib/1.9.3:
     dev: true
     resolution:
@@ -4163,14 +4177,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-VCIyR1wJoEBZUqk5PA+oOBF6ypbwh5aNB3I50guxAL/quggdfs4TtNHQrSazFA3fYZ+tEqfs0zIGlv0c/rgjbQ==
-  /yn/2.0.0:
+  /yn/3.1.0:
     dev: true
     engines:
-      node: '>=4'
+      node: '>=6'
     resolution:
-      integrity: sha1-5a2ryKz0CPY4X8dklWhMiOavaJo=
+      integrity: sha512-kKfnnYkbTfrAdd0xICNFw7Atm8nKpLcLv9AZGEt+kczL/WQVai4e2V6ZN8U/O+iI6WrNuJjNNOyu4zfhl9D3Hg==
 specifiers:
-  '@types/node': ^9.4.0 || 10
+  '@types/node': ^12.0.3
   '@types/tape': ^4.2.31
   bole: ^3.0.2
   commitizen: ^3.0.0
@@ -4181,7 +4195,7 @@ specifiers:
   package-preview: ^2.0.0
   rimraf: ^2.5.4
   tape: ^4.8.0
-  ts-node: ^7.0.0
+  ts-node: ^8.2.0
   tslint: ^5.0.0
   typescript: ^3.0.0
   validate-commit-msg: ^2.8.2
