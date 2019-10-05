@@ -1,4 +1,6 @@
 import logger, {
+  globalInfo,
+  globalWarn,
   Logger,
 } from './logger'
 import streamParser, {
@@ -10,6 +12,8 @@ import writeToConsole from './writeToConsole'
 export default logger
 
 export {
+  globalInfo,
+  globalWarn,
   streamParser,
   createStreamParser,
   writeToConsole,

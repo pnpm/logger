@@ -11,3 +11,13 @@ export interface Logger<T> {
   warn: (log: {message: string, prefix: string, error?: Error}) => void,
   error: (err: Error, log?: string | Error) => void,
 }
+
+const globalLogger = bole('pnpm:global')
+
+export function globalWarn(message: string) {
+  globalLogger.warn(message)
+}
+
+export function globalInfo(message: string) {
+  globalLogger.info(message)
+}
