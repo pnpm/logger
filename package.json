@@ -17,7 +17,7 @@
     "url": "git+https://github.com/pnpm/logger.git"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "keywords": [
     "pnpm",

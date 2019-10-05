@@ -1,7 +1,5 @@
 import logger, {
   Logger,
-  storeLogger,
-  StoreLogger,
 } from './logger'
 import streamParser, {
   createStreamParser,
@@ -13,8 +11,6 @@ export default logger
 
 export {
   streamParser,
-  storeLogger,
-  StoreLogger,
   createStreamParser,
   writeToConsole,
   LogBase,
