@@ -1,5 +1,5 @@
 dependencies:
-  bole: 4.0.0
+  bole: 3.0.2
   ndjson: 1.5.0
 devDependencies:
   '@types/node': 12.12.14
@@ -368,13 +368,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EUAyP5UHU5hxF8BPT0LKW8gjYLhq1DQIcneOX/pL/m2Alo+OYDQAJlHq+yseMP50Os2nHXOSic6Ss3vSQeyf4A==
-  /bole/4.0.0:
+  /bole/3.0.2:
     dependencies:
-      fast-safe-stringify: 2.0.7
+      fast-safe-stringify: 1.1.13
       individual: 3.0.0
     dev: false
     resolution:
-      integrity: sha512-Bk/2qoyOSlwU1dnDFk/oPM2FCNKAlYlBHfpAgwGX+K9HUtxSvmIAQCmMWMOvE6BlHHRCwsH1MxJe/r1ieodxqQ==
+      integrity: sha1-vIpIPKlASdqbg3wa0Rzf6+5uBRQ=
   /boxen/0.5.1:
     dependencies:
       camelcase: 2.1.1
@@ -868,10 +868,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-LUH1Y+H+QA7Uli/hpNXGp1Od9/Y=
-  /fast-safe-stringify/2.0.7:
+  /fast-safe-stringify/1.1.13:
     dev: false
     resolution:
-      integrity: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
+      integrity: sha1-oB6c2cnkkXFcmKdaQtXwu9EH/3Y=
   /figgy-pudding/3.5.1:
     dev: true
     resolution:
@@ -3184,7 +3184,7 @@ packages:
 specifiers:
   '@types/node': ^12.0.3
   '@types/tape': ^4.2.31
-  bole: ^4.0.0
+  bole: '3'
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
   ndjson: ^1.5.0
