@@ -1,13 +1,15 @@
 import bole = require('bole')
 import ndjson = require('ndjson')
 
+export type LOG_LEVEL = 'error' | 'warn' | 'info' | 'debug'
+
 export type LogBase = ({
   level: 'debug' | 'error',
 } | {
   level: 'info' | 'warn',
   prefix: string,
   message: string,
-})
+}) & { level: LOG_LEVEL }
 
 export type Reporter = (logObj: LogBase) => void
 

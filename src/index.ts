@@ -6,6 +6,7 @@ import logger, {
 import streamParser, {
   createStreamParser,
   LogBase,
+  LOG_LEVEL,
 } from './streamParser'
 import writeToConsole from './writeToConsole'
 
@@ -18,5 +19,6 @@ export {
   createStreamParser,
   writeToConsole,
   LogBase,
+  LOG_LEVEL,
   Logger,
 }
