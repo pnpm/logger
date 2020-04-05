@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
-    "lib"
+    "lib",
+    "!*.map"
   ],
   "scripts": {
     "test": "tslint -c tslint.json --project . && preview && ts-node test --type-check",
