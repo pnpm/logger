@@ -1,5 +1,5 @@
 dependencies:
-  bole: 3.0.2
+  bole: /@zkochan/bole/3.0.4
   ndjson: 1.5.0
 devDependencies:
   '@types/node': 12.12.14
@@ -12,7 +12,7 @@ devDependencies:
   ts-node: 9.0.0_typescript@4.0.2
   tslint: 6.1.0_typescript@4.0.2
   typescript: 4.0.2
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.5.5:
     dependencies:
@@ -91,6 +91,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-TPO97s9S8vasjzKw2IpoLrSEiXk=
+  /@zkochan/bole/3.0.4:
+    dependencies:
+      fast-safe-stringify: 1.1.13
+      individual: 3.0.0
+    dev: false
+    resolution:
+      integrity: sha512-3iPQz6Z7A2aiKc9cxB+I4X0nKxOagBxWAl91+ukUyJ9El+DgejYgbfd4PtzUyam+JRXXydUCkKGKiWYj8EzrGw==
   /acorn/3.0.4:
     dev: true
     engines:
@@ -380,13 +387,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EUAyP5UHU5hxF8BPT0LKW8gjYLhq1DQIcneOX/pL/m2Alo+OYDQAJlHq+yseMP50Os2nHXOSic6Ss3vSQeyf4A==
-  /bole/3.0.2:
-    dependencies:
-      fast-safe-stringify: 1.1.13
-      individual: 3.0.0
-    dev: false
-    resolution:
-      integrity: sha1-vIpIPKlASdqbg3wa0Rzf6+5uBRQ=
   /boxen/0.5.1:
     dependencies:
       camelcase: 2.1.1
@@ -3445,7 +3445,7 @@ packages:
 specifiers:
   '@types/node': ^12.0.3
   '@types/tape': ^4.2.31
-  bole: '3'
+  bole: 'npm:@zkochan/bole@^3.0.4'
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
   ndjson: ^1.5.0
