@@ -37,7 +37,7 @@
   "homepage": "https://github.com/pnpm/logger#readme",
   "dependencies": {
     "bole": "npm:@zkochan/bole@^3.0.4",
-    "ndjson": "^1.5.0"
+    "ndjson": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^12.0.3",
