@@ -1,5 +1,5 @@
-import bole = require('bole')
-import ndjson = require('ndjson')
+import bole from 'bole'
+import ndjson from 'ndjson'
 
 export type LogLevel = 'error' | 'warn' | 'info' | 'debug'
 

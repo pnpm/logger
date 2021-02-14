@@ -1,4 +1,4 @@
-import bole = require('bole')
+import bole from 'bole'
 
 export default function() {
   bole.output([

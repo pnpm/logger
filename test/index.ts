@@ -1,5 +1,5 @@
 import logger, {streamParser} from '@pnpm/logger'
-import test = require('tape')
+import test from 'tape'
 
 test('logger logs', t => {
   streamParser.on('data', msg => {
