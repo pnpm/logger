@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^12.0.3
+  '@types/node': ^14.0.0
   '@types/tape': ^4.2.31
   bole: ^4.0.0
   mos: ^2.0.0-alpha.3
@@ -19,7 +19,7 @@ dependencies:
   ndjson: 2.0.0
 
 devDependencies:
-  '@types/node': 12.12.14
+  '@types/node': 14.17.0
   '@types/tape': 4.2.33
   mos: 2.0.0-alpha.3
   mos-plugin-readme: 1.0.4
@@ -61,6 +61,10 @@ packages:
 
   /@types/node/12.12.14:
     resolution: {integrity: sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==}
+    dev: true
+
+  /@types/node/14.17.0:
+    resolution: {integrity: sha512-w8VZUN/f7SSbvVReb9SWp6cJFevxb4/nkG65yLAya//98WgocKm5PLDAtSs5CtJJJM+kHmJjO/6mmYW4MHShZA==}
     dev: true
 
   /@types/normalize-package-data/2.4.0:
