@@ -1,4 +1,4 @@
-import logger, {streamParser} from '@pnpm/logger'
+import { logger, streamParser } from '@pnpm/logger'
 import test = require('tape')
 
 test('logger logs', t => {
