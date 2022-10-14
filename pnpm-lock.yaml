@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': ^12.0.3
   '@types/tape': ^4.2.31
-  bole: ^4.0.1
+  bole: ^5.0.0
   mos: ^2.0.0-alpha.3
   mos-plugin-readme: ^1.0.4
   ndjson: ^2.0.0
@@ -15,7 +15,7 @@ specifiers:
   typescript: ^4.0.0
 
 dependencies:
-  bole: 4.0.1
+  bole: 5.0.0
   ndjson: 2.0.0
 
 devDependencies:
@@ -397,10 +397,10 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
-  /bole/4.0.1:
-    resolution: {integrity: sha512-42r0aSOJFJti2l6LasBHq2BuWJzohGs349olQnH/ETlJo87XnoWw7UT8pGE6UstjxzOKkwz7tjoFcmSr6L16vg==}
+  /bole/5.0.0:
+    resolution: {integrity: sha512-5Mg86/HaigcCBIeO4lsRQmOlDBhmSrVJgvvAeREc6ly3s53Bg0GGtxTYDu3xmlPpaFYhj8ONpkk7kI9Bd1Wclg==}
     dependencies:
-      fast-safe-stringify: 2.0.7
+      fast-safe-stringify: 2.1.1
       individual: 3.0.0
     dev: false
 
@@ -908,8 +908,8 @@ packages:
     resolution: {integrity: sha1-LUH1Y+H+QA7Uli/hpNXGp1Od9/Y=}
     dev: true
 
-  /fast-safe-stringify/2.0.7:
-    resolution: {integrity: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==}
+  /fast-safe-stringify/2.1.1:
+    resolution: {integrity: sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==}
     dev: false
 
   /figgy-pudding/3.5.1:
@@ -2363,6 +2363,20 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
+  /readable-stream/2.3.7:
+    resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
+    requiresBuild: true
+    dependencies:
+      core-util-is: 1.0.2
+      inherits: 2.0.4
+      isarray: 1.0.0
+      process-nextick-args: 2.0.1
+      safe-buffer: 5.1.2
+      string_decoder: 1.1.1
+      util-deprecate: 1.0.2
+    dev: true
+    optional: true
+
   /readable-stream/3.6.0:
     resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
     engines: {node: '>= 6'}
@@ -2898,7 +2912,7 @@ packages:
       inherits: 2.0.4
       js-yaml: 3.13.1
     optionalDependencies:
-      readable-stream: 2.3.6
+      readable-stream: 2.3.7
     dev: true
 
   /tape/4.5.1:

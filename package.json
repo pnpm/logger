@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/pnpm/logger#readme",
   "dependencies": {
-    "bole": "^4.0.1",
+    "bole": "^5.0.0",
     "ndjson": "^2.0.0"
   },
   "devDependencies": {
