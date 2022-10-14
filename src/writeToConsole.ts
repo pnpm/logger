@@ -1,6 +1,6 @@
 import bole = require('bole')
 
-export default function() {
+export function writeToConsole () {
   bole.output([
     {
       level: 'debug', stream: process.stdout,

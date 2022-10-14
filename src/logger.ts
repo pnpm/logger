@@ -2,7 +2,7 @@ import bole = require('bole')
 
 bole.setFastTime()
 
-export default bole('pnpm') as Logger<object>
+export const logger = bole('pnpm') as Logger<object>
 
 export interface Logger<T> {
   <Y>(name: string): Logger<Y>,

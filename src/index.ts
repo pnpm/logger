@@ -1,24 +1,13 @@
-import logger, {
+export {
+  logger,
   globalInfo,
   globalWarn,
   Logger,
 } from './logger'
-import streamParser, {
+export {
   createStreamParser,
+  streamParser,
   LogBase,
   LogLevel,
 } from './streamParser'
-import writeToConsole from './writeToConsole'
-
-export default logger
-
-export {
-  globalInfo,
-  globalWarn,
-  streamParser,
-  createStreamParser,
-  writeToConsole,
-  LogBase,
-  LogLevel,
-  Logger,
-}
+export { writeToConsole } from './writeToConsole'

@@ -18,7 +18,7 @@ export interface StreamParser {
   removeListener: (event: 'data', reporter: Reporter) => void,
 }
 
-export default createStreamParser()
+export const streamParser = createStreamParser()
 
 export function createStreamParser() {
   const sp: StreamParser = ndjson.parse()
