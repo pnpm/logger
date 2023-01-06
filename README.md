@@ -3,7 +3,7 @@
 > Logger for pnpm
 
 <!--@shields('npm', 'travis')-->
-[![npm version](https://img.shields.io/npm/v/@pnpm/logger.svg)](https://www.npmjs.com/package/@pnpm/logger) [![Build Status](https://img.shields.io/travis/pnpm/logger/master.svg)](https://travis-ci.org/pnpm/logger)
+[![npm version](https://img.shields.io/npm/v/@pnpm/logger.svg)](https://www.npmjs.com/package/@pnpm/logger) [![Build Status](https://app.travis-ci.com/pnpm/logger.svg?branch=main&status=unknown)](https://app.travis-ci.com/github/pnpm/logger)
 <!--/@-->
 
 ## Installation
