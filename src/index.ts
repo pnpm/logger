@@ -7,6 +7,10 @@ export {
 export {
   createStreamParser,
   streamParser,
+  LogBaseDebug,
+  LogBaseError,
+  LogBaseInfo,
+  LogBaseWarn,
   LogBase,
   LogLevel,
 } from './streamParser'

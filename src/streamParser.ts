@@ -3,13 +3,33 @@ import ndjson = require('ndjson')
 
 export type LogLevel = 'error' | 'warn' | 'info' | 'debug'
 
-export type LogBase = ({
-  level: 'debug' | 'error',
-} | {
-  level: 'info' | 'warn',
-  prefix: string,
-  message: string,
-}) & { level: LogLevel }
+export interface LogBaseTemplate {
+  level?: LogLevel
+  prefix?: string
+  message?: string
+}
+
+export interface LogBaseDebug extends LogBaseTemplate {
+  level: 'debug'
+}
+
+export interface LogBaseError extends LogBaseTemplate {
+  level: 'error'
+}
+
+export interface LogBaseInfo extends LogBaseTemplate {
+  level: 'info'
+  prefix: string
+  message: string
+}
+
+export interface LogBaseWarn extends LogBaseTemplate {
+  level: 'warn'
+  prefix: string
+  message: string
+}
+
+export type LogBase = LogBaseDebug | LogBaseError | LogBaseInfo | LogBaseWarn
 
 export type Reporter = (logObj: LogBase) => void
 
